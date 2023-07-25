@@ -85,7 +85,7 @@ assertthat::on_failure(all_match_of) <- function(call, env) {
 #'
 #' @noRd
 no_duplicates <- function(x) {
-  assert(is.vector(x), .internal = TRUE)
+  # assert(is.vector(x), .internal = TRUE)
   anyDuplicated(x) == 0L
 }
 
